@@ -1,3 +1,117 @@
-baseurl = "/"
+baseurl = "https://0trust.de/"
 languageCode = "en-us"
-title = "Homepage"
+title = "0TRUST"
+theme = ["hugo-creative-theme", "gohugo-theme-ananke"]
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Wladislaw Wagner"
+	description = "0TRUST - THE TEST AUTOMATION COMPANY - DON'T TRUST. VERIFY."
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "0TRUST"
+
+	[params.navigation.links]
+		about     = "About"
+		services  = "Services"
+		portfolio = "Tech"
+		blog      = "Blog"
+		contact   = "Kontakt"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "TEST AUTOMATION"
+		subtitle   = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt consequatur ut nihil voluptatem fugiat eos eveniet alias in veniam?"
+		# buttonText = "don't trust. verify."
+
+
+	# About section
+	[params.about]
+		headline    = "We've got what you need!"
+		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
+		buttonText  = "Get started!"
+
+
+	# Service section
+	[params.services]
+		headline = "At your service"
+
+        [[params.services.list]]
+        	icon = "fa-diamond"
+        	title = "Sturdy Templates"
+        	description = "Our templates are updated regularly so they don't break."
+
+        [[params.services.list]]
+		icon = "fa-paper-plane"
+		title = "Ready to Ship"
+		description = "You can use this theme as is, or you can make changes!"
+
+		[[params.services.list]]
+            	icon = "fa-newspaper-o"
+            	title = "Up to Date"
+            	description = "We update dependencies to keep things fresh."
+
+        [[params.services.list]]
+            	icon = "fa-heart"
+            	title = "Made with Love"
+            	description = "You have to make your websites with love these days!"
+
+
+    # Aside section
+	[params.aside]
+		headline = "don't trust. verify."
+
+		# [params.aside.button]
+		#	text = "Download now"
+		#	link = "//github.com/digitalcraftsman/hugo-creative-theme"
+
+
+    # Tech Portfolio section with modals
+	[params.portfolio]
+		headline    = "State Of The Art Technologien"
+		description = "Wir arbeiten mit bewährten und zukunftsweisenden Technologie-Stacks!"
+
+	[params.portfolio.modal]
+        	client = "Client"
+        	date = "Date"
+        	category = "Category"
+        	buttonText = "Close"
+
+
+    # Google Maps section
+	# [params.location]
+	# 	latitude  = "34.007850"
+	# 	longitude = "-118.499305"
+	# 	maps_api_key = ""
+
+
+    # Contact section
+	[params.contact]
+		headline = "Let's Get In Touch!"
+		description = "Ready to start your next project with us? That's great! Give us a call or send us an email!"
+		phone = "123-456-6789"
+		email = "feedback@startbootstrap.com"
+
+
